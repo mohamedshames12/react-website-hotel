@@ -1,5 +1,7 @@
 import React from "react";
-
+import {BiBed} from "react-icons/bi"
+import {MdFlight, MdOutlineAttractions, MdLocalTaxi} from "react-icons/md"
+import {AiFillCar} from "react-icons/ai"
 const Header = () => {
   return (
     <>
@@ -19,6 +21,32 @@ const Header = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="stays">
+            <div className="box-stays">
+              <BiBed />
+              <span>Stays</span>
+            </div>
+            <div className="box-stays">
+              <MdFlight />
+              <span>flight</span>
+            </div>
+            <div className="box-stays">
+              <AiFillCar />
+              <span>Stays</span>
+            </div>
+            <div className="box-stays">
+              <MdOutlineAttractions />
+              <span>Attractions</span>
+            </div>
+            <div className="box-stays">
+              <MdLocalTaxi />
+              <span>airport taxis</span>
+            </div>
+          </div>
+          <div className="find">
+              <h1>Find your next stay</h1>
+              <p>Search deals on hotels, homes, and much more...</p>
           </div>
         </div>
       </header>

@@ -2,6 +2,7 @@ import React from "react";
 import {BiBed} from "react-icons/bi"
 import {MdFlight, MdOutlineAttractions, MdLocalTaxi} from "react-icons/md"
 import {AiFillCar} from "react-icons/ai"
+import Coronavirus from "./Coronavirus";
 const Header = () => {
   return (
     <>
@@ -48,8 +49,21 @@ const Header = () => {
               <h1>Find your next stay</h1>
               <p>Search deals on hotels, homes, and much more...</p>
           </div>
-        </div>
+            <div className="inputs">
+              <input type="text" placeholder="Where are you going?"  className="input"/>
+            <input type="date" />
+            <button>Search</button>
+            </div>
+
+        </div> 
       </header>
+      <div className="boxcheck">
+      <input type="checkbox" />
+      <span>Show me entire houses and apartments</span>
+      <input type="checkbox" />
+      <span>I'm traveling for work</span>
+       </div>
+       <Coronavirus />
     </>
   );
 };

@@ -273,4 +273,78 @@ header{
     position: relative;
 }
 
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
 
+.container .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .wrapper .box {
+    width: 100%;
+    margin: 2rem 0;
+} 
+
+.container .wrapper .box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.container .wrapper .box h4 {
+    text-transform: capitalize;
+}
+
+.container .wrapper .box p {
+    font-size: .9rem;
+}
+
+.container .homes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.container .homes .box {
+    margin: 2rem 0;
+}
+
+.container .homes .box img {
+    width: 100%;
+    border-radius: 5px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.container .homes .box .flex {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.container .homes .box .flex .num {
+    margin-right: .5rem;
+    background: #3a0ca3;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0.2rem .4rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #6fa9b7;
+    color: #000;
+}
+
+.footer h3 {
+    margin-bottom: .5rem;
+}
